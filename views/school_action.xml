@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="school_actions_id" model="ir.actions.act_window">
+        <field name="name">School</field>
+        <field name="res_model">school</field>
+    </record>
+
+    <record id="school_actions_tree_view_id" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="school.school_tree_view_id"/>
+        <field name="act_window_id" ref="school.school_actions_id"/>
+    </record>
+</odoo>

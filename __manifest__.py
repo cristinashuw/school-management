@@ -10,12 +10,24 @@
 This module gives you a quick view of your school schedules, accessible from your home page.
 You can track your teachers and students.
 """,
-    'depends': ['base'],
+    'depends': ['web','base'],
     'data': [
-        'views/school_views.xml',
-        'views/teacher_views.xml',
-        'views/student_views.xml',
-        'views/parent_views.xml'
+        'views/jurusan_kuliah_action.xml',
+        'views/jurusan_kuliah_menuitem.xml',
+        'views/jurusan_kuliah_view.xml',
+        'views/parents_action.xml',
+        'views/parents_menuitem.xml',
+        'views/parents_view.xml',
+        'views/school_action.xml',
+        'views/school_menuitem.xml',
+        'views/school_view.xml',
+        'views/student_action.xml',
+        'views/student_menuitem.xml',
+        'views/student_view.xml',
+        'views/teacher_action.xml',
+        'views/teacher_menuitem.xml',
+        'views/teacher_view.xml',
+        
              
     ],
     'application': True,
