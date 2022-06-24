@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="parent_parents_id"
+        name="Parents"
+        sequence="5"/>
+        <menuitem
+            id="child_parents_id"
+            name="Parents"
+            sequence="1"
+            parent="parents.parent_parents_id"
+            action="parents.parents_actions_id"/>
+</odoo>
