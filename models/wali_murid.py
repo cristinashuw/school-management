@@ -1,7 +1,7 @@
 from odoo import models, fields, _
 
-class Teacher(models.Model):
-    _name = 'teacher.teacher'
+class WaliMurid(models.Model):
+    _name = 'wali.murid'
 
     name = fields.Char(string="Name")
     tanggal = fields.Date(string="Tanggal Masuk")

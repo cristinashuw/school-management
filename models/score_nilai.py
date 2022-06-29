@@ -1,7 +1,7 @@
 from odoo import models, fields, _
 
-class Teacher(models.Model):
-    _name = 'teacher.teacher'
+class ScoreNilai(models.Model):
+    _name = 'score.nilai'
 
     name = fields.Char(string="Name")
     tanggal = fields.Date(string="Tanggal Masuk")
