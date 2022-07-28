@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-# Part of TigernixERP. See LICENSE file for full copyright and licensing details.
-
-
 {
     'name': 'School',
     'category': 'School',
@@ -10,25 +6,30 @@
 This module gives you a quick view of your school schedules, accessible from your home page.
 You can track your teachers and students.
 """,
-    'depends': ['web','base'],
-    'data': [
-        'views/jurusan_kuliah_action.xml',
-        'views/jurusan_kuliah_menuitem.xml',
-        'views/jurusan_kuliah_view.xml',
-        'views/parents_action.xml',
-        'views/parents_menuitem.xml',
-        'views/parents_view.xml',
-        'views/school_action.xml',
-        'views/school_menuitem.xml',
-        'views/school_view.xml',
-        'views/student_action.xml',
-        'views/student_menuitem.xml',
-        'views/student_view.xml',
-        'views/teacher_action.xml',
-        'views/teacher_menuitem.xml',
-        'views/teacher_view.xml',
+    
+    'website':'',
+    'author':'Cristina',
+    'depends':['web','base'],
+    'data':[
+        'security/ir.model.access.csv',
         
-             
+        'views/registration_view.xml',
+        'views/teacher_view.xml',
+        'views/student_view.xml',
+        'views/wali_murid_view.xml',
+        'views/score_nilai_view.xml',
+
+
+        'views/registration_action.xml',
+        'views/teacher_action.xml',
+        'views/student_action.xml',
+        'views/wali_murid_action.xml',
+        'views/score_nilai_action.xml',
+
+        'views/school_menuitem.xml',
+        'reports/register_student_qweb.xml'
     ],
+    'installable': True,
     'application': True,
+    'license': 'OEEL-1',
 }
